@@ -1,0 +1,40 @@
+body {
+  background-color: #000000;
+}
+
+#fire {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  top: 100%;
+  left: 50%;
+  transform:translate(-7.5vw, -20vw);
+  background-color: BLACK;
+}
+
+.flame {
+  transform:rotate(45deg);
+  border-radius:0.25vw;
+}
+
+#log1 {
+  position: absolute;
+  top: 11vw;
+  left: 2.5vw;
+  width: 10vw;
+  height: 2vw;
+  border-radius: 0.5vw;
+  transform:rotate(-15deg);
+  background-color: #B07663;
+}
+
+#log2 {
+  position: absolute;
+  top: 11vw;
+  left: 2.5vw;
+  width: 10vw;
+  height: 2vw;
+  border-radius: 0.5vw;
+  transform:rotate(15deg);
+  background-color: #BF8775;
+}
