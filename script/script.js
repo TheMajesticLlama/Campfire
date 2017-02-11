@@ -45,6 +45,7 @@ function Flame() {
     document_flame.style.width = (this.size/5) + 'vw';
     document_flame.style.height = (this.size/5) + 'vw';
     document_flame.style.backgroundColor = 'hsl(' + Math.floor(this.hue) + ', 90%, 54%)';
+    document_flame.style.transform = 'translate(' + -(this.size/10) + 'vw , 0vw) rotate(45deg)';
   };
 
   var element = document.createElement('div');
@@ -54,7 +55,8 @@ function Flame() {
   element.style.top = (11 - this.y) + 'vw';
   element.style.width = (this.size/5) + 'vw';
   element.style.height = (this.size/5) + 'vw';
-  element.style.backgroundColor = this.color;
+  element.style.backgroundColor = 'hsl(' + Math.floor(this.hue) + ', 90%, 54%)';
+  element.style.transform = 'translate(' + -(this.size/5) + 'vw , 0vw) rotate(45deg)';
   document.getElementById('flames').appendChild(element);
 };
 
